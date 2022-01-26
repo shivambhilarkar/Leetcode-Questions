@@ -14,19 +14,25 @@ Output: [3,4,5,5,4,null,7]
 
 
 
-- Definition for a binary tree node.
-- public class TreeNode {
--     int val;
--     TreeNode left;
--     TreeNode right;
--     TreeNode() {}
--     TreeNode(int val) { this.val = val; }
--     TreeNode(int val, TreeNode left, TreeNode right) {
--         this.val = val;
--         this.left = left;
--         this.right = right;
--     }
-- }
+// - Definition for a binary tree node.
+ public class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+
+        TreeNode() {
+        }
+
+        TreeNode(int val) {
+            this.val = val;
+        }
+
+        TreeNode(int val, TreeNode left, TreeNode right) {
+            this.val = val;
+            this.left = left;
+            this.right = right;
+        }
+    }
  
   class Solution {
   public TreeNode mergeTrees(TreeNode root1, TreeNode root2) {

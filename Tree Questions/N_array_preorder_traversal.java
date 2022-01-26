@@ -1,6 +1,5 @@
-public class N_array_postorder_traversal {
+public class N_array_preorder_traversal {
 
-    // * // Definition for a Node.
     public class TreeNode {
         int val;
         TreeNode left;
@@ -21,20 +20,20 @@ public class N_array_postorder_traversal {
     }
 
     class Solution {
-        public List<Integer> postorder(Node root) {
-            ArrayList<Integer> list = new ArrayList<>();
-            postorder_traversal(root, list);
+        public List<Integer> preorder(Node root) {
+            List<Integer> list = new ArrayList<>();
+            preorder_Traversal(root, list);
             return list;
         }
 
-        public void postorder_traversal(Node root, ArrayList<Integer> list) {
+        public void preorder_Traversal(Node root, List<Integer> list) {
             if (root == null) {
                 return;
             }
-            for (int i = 0; i < root.children.size(); i++) {
-                postorder_traversal(root.children.get(i), list);
-            }
             list.add(root.val);
+            for (int i = 0; i < root.children.size(); i++) {
+                preorder_Traversal(root.children.get(i), list);
+            }
         }
     }
 
