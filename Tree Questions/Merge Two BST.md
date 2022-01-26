@@ -12,7 +12,7 @@ Example 1:
 Input: root1 = [1,3,2,5], root2 = [2,1,3,null,4,null,7]
 Output: [3,4,5,5,4,null,7]
 
-/\*\*
+
 
 - Definition for a binary tree node.
 - public class TreeNode {
@@ -27,7 +27,7 @@ Output: [3,4,5,5,4,null,7]
 -         this.right = right;
 -     }
 - }
-  \*/
+ 
   class Solution {
   public TreeNode mergeTrees(TreeNode root1, TreeNode root2) {
   if(root1 == null){
