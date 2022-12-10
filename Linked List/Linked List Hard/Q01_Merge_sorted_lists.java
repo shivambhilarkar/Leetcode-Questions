@@ -1,5 +1,7 @@
 import java.util.PriorityQueue;
 
+//Important Note : If the input is given in the form of array , then use the pair class which store the current value and row , col.
+
 public class Q01_Merge_sorted_lists {
     public class ListNode {
         int val;
